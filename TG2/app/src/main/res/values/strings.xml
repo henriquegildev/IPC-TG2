@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TG2</string>
+    <string name="currentTime">currentTime</string>
+    <string name="action_settings">Settings</string>
+</resources>
