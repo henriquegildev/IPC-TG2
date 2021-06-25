@@ -42,18 +42,76 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="93dp"
-        android:layout_height="88dp"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
         app:srcCompat="@drawable/pill"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="147dp" />
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/pill"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/pill"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="467dp" />
 
     <TextView
         android:id="@+id/textView5"
+        android:layout_width="375dp"
+        android:layout_height="32dp"
+        android:text="@string/medicine_in_plan"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="372dp"
+        android:layout_height="57dp"
+        android:text="@string/previously_medicine_in_plan"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="86dp"
+        android:layout_height="23dp"
+        android:text="@string/medicine_name_1"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="102dp" />
+        android:text="@string/medicine_name_2"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medicine_name_3"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="487dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
