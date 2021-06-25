@@ -126,7 +126,7 @@
         android:text="@string/medicine_in_plan"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="112dp" />
+        tools:layout_editor_absoluteY="111dp" />
 
     <ProgressBar
         android:id="@+id/progressBar4"
