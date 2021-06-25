@@ -9,8 +9,7 @@
     <string name="add_medicine">Adicionar</string>
     <string name="medicine_in_plan">Medicamentos no Plano</string>
     <string name="previously_medicine_in_plan">Medicamentos Anteriormente no Plano</string>
-    <string name="missed_medicine">Esquecido</string>
-    <string name="taken_medicine">Tomado</string>
+    <string name="to_take_taken_medicine">Faltam/Tomados</string>
     <string name="medicine_name_1">Ibuprofeno</string>
     <string name="medicine_name_2">Clavamox</string>
     <string name="medicine_name_3">Kestine</string>
