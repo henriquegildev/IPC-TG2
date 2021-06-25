@@ -6,15 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainPage">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="88dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Menu"
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:hapticFeedbackEnabled="false"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="144dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/easymed" />
 
     <View
         android:id="@+id/divider6"
@@ -22,7 +38,6 @@
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
         tools:layout_editor_absoluteX="-132dp" />
 
     <View
@@ -35,15 +50,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="144dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:scaleX="2"
-        android:scaleY="2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/easymedv2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

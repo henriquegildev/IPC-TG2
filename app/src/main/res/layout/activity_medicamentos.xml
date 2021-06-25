@@ -6,6 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Adicionar_Medicamentos">
 
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:background="@null"
+        android:cropToPadding="false"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/back_button" />
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:hapticFeedbackEnabled="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
@@ -39,31 +68,6 @@
         android:layout_height="29dp"
         tools:layout_editor_absoluteX="310dp"
         tools:layout_editor_absoluteY="521dp" />
-
-    <BackButton
-        android:id="@+id/imageButton"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="false"
-        android:background="@null"
-        android:cropToPadding="false"
-        android:scaleX="2.5"
-        android:scaleY="2.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/back_button" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="88dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider"
