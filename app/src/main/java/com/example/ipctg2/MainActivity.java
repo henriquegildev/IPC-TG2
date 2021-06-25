@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Button menu_button;
+    private ImageButton menu_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        menu_button = (Button) findViewById(R.id.menu_button);
+        menu_button = (ImageButton) findViewById(R.id.menu_button3);
         menu_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMenu(){
-        Intent intent = new Intent(this, activity_menu);
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
     }
 }
