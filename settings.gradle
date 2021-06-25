@@ -1,0 +1,2 @@
+rootProject.name = "IPCTG2"
+include ':app'
