@@ -15,5 +15,6 @@
     <string name="medicine_name_3">Kestine</string>
     <string name="change_icon">Alterar Ícone</string>
     <string name="currentTime">00:00</string>
+    <string name="medicamentosTitle">Medicamentos</string>
 
 </resources>
