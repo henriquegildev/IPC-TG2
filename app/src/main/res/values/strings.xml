@@ -14,6 +14,7 @@
     <string name="medicine_name_1">Ibuprofeno</string>
     <string name="medicine_name_2">Clavamox</string>
     <string name="medicine_name_3">Kestine</string>
+    <string name="change_icon">Alterar Ícone</string>
     <string name="currentTime">00:00</string>
 
 </resources>
