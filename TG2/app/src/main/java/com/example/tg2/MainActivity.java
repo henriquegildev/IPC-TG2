@@ -3,7 +3,6 @@ package com.example.tg2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
-import android.icu.util.ULocale;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -16,7 +15,6 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DateFormat;
-//import android.text.format.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
