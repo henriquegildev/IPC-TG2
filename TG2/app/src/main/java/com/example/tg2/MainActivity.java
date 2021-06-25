@@ -21,14 +21,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import horizontalcalendar.HorizontalCalendar;
-import horizontalcalendar.model.CalendarEvent;
-import horizontalcalendar.utils.CalendarEventsPredicate;
-import horizontalcalendar.utils.HorizontalCalendarListener;
 
 public class MainActivity extends AppCompatActivity {
-
-    private HorizontalCalendar horizontalCalendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,56 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Default Date set to Today.
         final Calendar defaultSelectedDate = Calendar.getInstance();
-
-        horizontalCalendar = new HorizontalCalendar.Builder(this, R.id.calendarView)
-                .range(startDate, endDate)
-                .datesNumberOnScreen(5)
-                .configure()
-                .formatTopText("MMM")
-                .formatMiddleText("dd")
-                .formatBottomText("EEE")
-                .showTopText(true)
-                .showBottomText(true)
-                .textColor(Color.LTGRAY, Color.WHITE)
-                .colorTextMiddle(Color.LTGRAY, Color.parseColor("#ffd54f"))
-                .end()
-                .defaultSelectedDate(defaultSelectedDate)
-                .addEvents(new CalendarEventsPredicate() {
-
-                    Random rnd = new Random();
-                    @Override
-                    public List<CalendarEvent> events(Calendar date) {
-                        List<CalendarEvent> events = new ArrayList<>();
-                        int count = rnd.nextInt(6);
-
-                        for (int i = 0; i <= count; i++){
-                            events.add(new CalendarEvent(Color.rgb(rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)), "event"));
-                        }
-
-                        return events;
-                    }
-                })
-                .build();
-
-        Log.i("Default Date", DateFormat.getDateInstance(1).toString());
-
-        horizontalCalendar.setCalendarListener(new HorizontalCalendarListener() {
-            @Override
-            public void onDateSelected(Calendar date, int position) {
-                String selectedDateStr = DateFormat.getDateInstance(1).toString();
-                Toast.makeText(MainActivity.this, selectedDateStr + " selected!", Toast.LENGTH_SHORT).show();
-                Log.i("onDateSelected", selectedDateStr + " - Position = " + position);
-            }
-
-        });
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                horizontalCalendar.goToday(false);
-            }
-        });
 
     }
 
