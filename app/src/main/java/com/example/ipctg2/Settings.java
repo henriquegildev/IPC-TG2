@@ -19,10 +19,10 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        backButton = (ImageButton) findViewById(R.id.back_button);
+        backButton = (ImageButton) findViewById(R.id.back_button3);
         backButton.setOnClickListener(v -> goBack());
 
-        menuButton = (ImageButton) findViewById(R.id.menu_button);
+        menuButton = (ImageButton) findViewById(R.id.menu_button5);
         menuButton.setOnClickListener(v -> openMenu());
 
     }

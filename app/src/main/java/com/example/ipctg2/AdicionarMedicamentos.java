@@ -9,32 +9,25 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 
-public class Adicionar_Medicamentos extends AppCompatActivity {
+public class AdicionarMedicamentos extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
-    private ImageButton mainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_medicamentos);
 
-        mainButton = findViewById(R.id.main_button);
-        mainButton.setOnClickListener(v -> openMain(v));
-
         backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
 
-        menuButton = findViewById(R.id.menu_button);
+        menuButton = findViewById(R.id.menu_button4);
         menuButton.setOnClickListener(v -> openMenu());
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
         MultiAutoCompleteTextView textView = findViewById(R.id.editTextTextPersonName);
         textView.setAdapter(adapter);
         textView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
-
-        View viewAboutButton = findViewById(R.id.view_menu_5);
-        viewAboutButton.setOnClickListener(v -> openSelectMedIcon(v));
     }
 
     //TODO:
