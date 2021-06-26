@@ -18,5 +18,8 @@
     <string name="medicamentosTitle">Medicamentos</string>
     <string name="addMedsButton">Adicionar Medicamentos</string>
     <string name="settingsText">Definições</string>
+    <string name="logoDescription">App Logo</string>
+    <string name="menuButtonDesc">Menu Button</string>
+    <string name="topViewTitleText">Parte da Manhã</string>
 
 </resources>
