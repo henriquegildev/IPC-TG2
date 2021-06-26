@@ -1,7 +1,5 @@
 package com.example.ipctg2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ListActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
