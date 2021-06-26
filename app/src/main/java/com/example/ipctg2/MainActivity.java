@@ -18,10 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        menu_button = (ImageButton) findViewById(R.id.menu_button);
+
+        menu_button = findViewById(R.id.menu_button3);
         menu_button.setOnClickListener(v -> openMenu(v));
 
-        adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listStrings);
+        adapter= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listStrings);
     }
 
     //TODO:
