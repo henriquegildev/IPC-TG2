@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TG2</string>
+    <string name="app_name">EasyMed</string>
     <string name="current_time">Tempo Atual</string>
     <string name="action_settings">Definições</string>
     <string name="name_medicine">Nome Medicamento</string>
