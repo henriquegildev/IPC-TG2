@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">EasyMed</string>
-    <string name="current_time">Tempo Atual</string>
     <string name="action_settings">Definições</string>
     <string name="name_medicine">Nome Medicamento</string>
     <string name="icon_medicine">Ícone Medicamento</string>
@@ -15,13 +14,13 @@
     <string name="medicine_name_2">Clavamox</string>
     <string name="medicine_name_3">Kestine</string>
     <string name="change_icon">Alterar Ícone</string>
-    <string name="currentTime">00:00</string>
-    <string name="medicamentosTitle">Medicamentos</string>
-    <string name="addMedsButton">Adicionar Medicamentos</string>
+    <string name="current_time">00:00</string>
+    <string name="med_title">Medicamentos</string>
+    <string name="add_meds_button">Adicionar Medicamentos</string>
     <string name="settingsText">Definições</string>
-    <string name="logoDescription">App Logo</string>
-    <string name="menuButtonDesc">Menu Button</string>
-    <string name="topViewTitleText">Parte da Manhã</string>
+    <string name="logo_description">App Logo</string>
+    <string name="menu_button_descrition">Menu Button</string>
+    <string name="top_view_title_text">Parte da Manhã</string>
     <string name="about">Acerca</string>
     <string name="home">Home</string>
     <string name="ativate_dark_mode">Ativar modo escuro</string>
