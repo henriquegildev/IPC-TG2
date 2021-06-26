@@ -23,7 +23,7 @@
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
         android:textColor="#1E90FF"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
 
 </GridLayout>
