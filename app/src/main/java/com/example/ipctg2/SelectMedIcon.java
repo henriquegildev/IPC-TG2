@@ -32,14 +32,14 @@ public class SelectMedIcon extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_med_icon);
 
-        backButton = (ImageButton) findViewById(R.id.back_button);
+        backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
 
         TextView textView = new TextView(this);
         textView.setTypeface(Typeface.DEFAULT_BOLD);
         textView.setText("List of Med");
 
-        ListView listView=(ListView)findViewById(android.R.id.list);
+        ListView listView= findViewById(android.R.id.list);
         listView.addHeaderView(textView);
 
         // For populating list data

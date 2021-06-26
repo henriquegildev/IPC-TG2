@@ -25,6 +25,7 @@ public class Medicamentos extends AppCompatActivity {
 
         menuButton = findViewById(R.id.menu_button);
         menuButton.setOnClickListener(v -> openMenu());
+
     }
 
     //TODO:
