@@ -26,4 +26,5 @@
     <string name="home">Home</string>
     <string name="ativate_dark_mode">Ativar modo escuro</string>
     <string name="select_med_icon">Selecione o ícone do medicamento</string>
+    <string name="zero_time">00:00:00</string>
 </resources>
