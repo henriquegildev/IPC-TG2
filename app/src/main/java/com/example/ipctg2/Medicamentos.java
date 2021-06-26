@@ -20,10 +20,10 @@ public class Medicamentos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicamentos);
 
-        backButton = (ImageButton) findViewById(R.id.back_button);
+        backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
 
-        menuButton = (ImageButton) findViewById(R.id.menu_button);
+        menuButton = findViewById(R.id.menu_button);
         menuButton.setOnClickListener(v -> openMenu());
     }
 

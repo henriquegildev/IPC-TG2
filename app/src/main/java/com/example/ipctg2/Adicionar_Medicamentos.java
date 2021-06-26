@@ -19,13 +19,13 @@ public class Adicionar_Medicamentos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_medicamentos);
 
-        mainButton = (ImageButton) findViewById(R.id.main_button);
-        mainButton.setOnClickListener(v -> openMain());
+        mainButton = findViewById(R.id.main_button);
+        mainButton.setOnClickListener(v -> openMain(v));
 
-        backButton = (ImageButton) findViewById(R.id.back_button);
+        backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
 
-        menuButton = (ImageButton) findViewById(R.id.menu_button);
+        menuButton = findViewById(R.id.menu_button);
         menuButton.setOnClickListener(v -> openMenu());
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
@@ -33,7 +33,7 @@ public class Adicionar_Medicamentos extends AppCompatActivity {
         textView.setAdapter(adapter);
         textView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
 
-        View viewAboutButton = (View) findViewById(R.id.view_menu_5);
+        View viewAboutButton = findViewById(R.id.view_menu_5);
         viewAboutButton.setOnClickListener(v -> openSelectMedIcon(v));
     }
 
@@ -44,7 +44,10 @@ public class Adicionar_Medicamentos extends AppCompatActivity {
     // -----
     // Tenta implementar um calendário que dê para selecionar a data.
 
-    public void openMain() {
+    public void openMain(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+    public void openSelectMedIcon(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
 

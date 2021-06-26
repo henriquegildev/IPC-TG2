@@ -12,7 +12,7 @@ public class SelectMedIcon extends ListActivity {
     private ListView listView;
     private String nameMed[] = {
             "Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"
-    }
+    };
 
     private Integer imageid[] = {
             R.drawable.med1,
