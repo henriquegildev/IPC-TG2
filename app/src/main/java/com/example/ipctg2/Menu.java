@@ -76,7 +76,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openSettings(View view){
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, Settings.class));
     }
 
     public void openAbout(View view){

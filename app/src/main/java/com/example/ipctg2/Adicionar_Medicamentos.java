@@ -32,6 +32,9 @@ public class Adicionar_Medicamentos extends AppCompatActivity {
         MultiAutoCompleteTextView textView = findViewById(R.id.editTextTextPersonName);
         textView.setAdapter(adapter);
         textView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+
+        View viewAboutButton = (View) findViewById(R.id.view_menu_5);
+        viewAboutButton.setOnClickListener(v -> openSelectMedIcon(v));
     }
 
     //TODO:
