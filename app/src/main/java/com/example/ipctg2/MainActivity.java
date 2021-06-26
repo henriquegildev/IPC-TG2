@@ -57,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
             public void run(){
                 try{
                     while (!isInterrupted()){
-                        Thread.sleep(500);
+                        Thread.sleep(1000);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 //Sets current time from moment of creation
-                                String currentTimeString = DateFormat.getTimeInstance(DateFormat.DEFAULT).format(new Date());
+                                String currentTimeString = DateFormat.getTimeInstance(DateFormat.SHORT).format(new Date());
                                 time.setText(currentTimeString);
                             }
                         });
