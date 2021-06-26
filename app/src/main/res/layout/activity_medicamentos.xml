@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <View
-        android:id="@+id/divider4"
+        android:id="@+id/divider_add_meds_4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="25dp"

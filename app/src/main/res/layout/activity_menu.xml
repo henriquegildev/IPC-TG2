@@ -6,67 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Menu">
 
-    <View
-        android:id="@+id/divider9"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="12dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
-
-    <View
-        android:id="@+id/divider10"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="12dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
-
-    <View
-        android:id="@+id/divider11"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="12dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
-
-    <View
-        android:id="@+id/divider12"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="12dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <ImageView
-        android:id="@+id/logo2"
-        android:layout_width="144dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:contentDescription="@string/logoDescription"
+    <ImageButton
+        android:id="@+id/main_button"
+        android:layout_width="98dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/easymed" />
@@ -75,79 +23,198 @@
         android:id="@+id/menu_button2"
         android:layout_width="61dp"
         android:layout_height="57dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:background="@null"
         android:backgroundTint="@null"
+        android:contentDescription="@string/menuButtonDesc"
         android:hapticFeedbackEnabled="false"
         android:scaleType="fitXY"
-        android:contentDescription="@string/menuButtonDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
+    <View
+        android:id="@+id/divider_menu_1"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="90dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_menu_1"
+        android:layout_width="383dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_menu_1" />
+
     <TextView
-        android:id="@+id/medicamentosButton"
+        android:id="@+id/home_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:capitalize="none"
+        android:clickable="true"
+        android:text="@string/home"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_menu_1"
+        app:layout_constraintEnd_toEndOf="@+id/view_menu_1"
+        app:layout_constraintStart_toStartOf="@+id/view_menu_1"
+        app:layout_constraintTop_toTopOf="@+id/view_menu_1" />
+
+    <View
+        android:id="@+id/divider_menu_2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_menu_1" />
+
+    <View
+        android:id="@+id/view_menu_2"
+        android:layout_width="383dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_menu_2" />
+
+    <TextView
+        android:id="@+id/medicine_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="@string/medicamentosTitle"
-        android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/divider10"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_menu_2"
+        app:layout_constraintEnd_toEndOf="@+id/view_menu_2"
+        app:layout_constraintStart_toStartOf="@+id/view_menu_2"
+        app:layout_constraintTop_toTopOf="@+id/view_menu_2" />
+
+    <View
+        android:id="@+id/divider_menu_3"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider9"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/view_menu_2" />
+
+    <View
+        android:id="@+id/view_menu_3"
+        android:layout_width="383dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_menu_3" />
 
     <TextView
-        android:id="@+id/addMedsButton"
+        android:id="@+id/add_medicine_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="@string/addMedsButton"
-        android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/divider11"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_menu_3"
+        app:layout_constraintEnd_toEndOf="@+id/view_menu_3"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/view_menu_3"
+        app:layout_constraintTop_toTopOf="@+id/view_menu_3"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <View
+        android:id="@+id/divider_menu_4"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+        app:layout_constraintTop_toBottomOf="@+id/view_menu_3" />
+
+    <View
+        android:id="@+id/view_menu_4"
+        android:layout_width="383dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_menu_4" />
 
     <TextView
-        android:id="@+id/settingsButton"
+        android:id="@+id/settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/settingsText"
         android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/divider12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+        android:text="@string/settingsText"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_menu_4"
+        app:layout_constraintEnd_toEndOf="@+id/view_menu_4"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view_menu_4"
+        app:layout_constraintTop_toTopOf="@+id/view_menu_4"
+        app:layout_constraintVertical_bias="0.546" />
 
     <View
-        android:id="@+id/view4"
-        android:layout_width="383dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/divider_menu_5"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+        app:layout_constraintTop_toBottomOf="@+id/view_menu_4" />
 
     <View
-        android:id="@+id/view5"
+        android:id="@+id/view_menu_5"
         android:layout_width="383dp"
-        android:layout_height="109dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider11"
+        android:layout_height="90dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+        app:layout_constraintTop_toTopOf="@+id/divider_menu_5" />
 
-    <View
-        android:id="@+id/view6"
-        android:layout_width="383dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider11"
-        app:layout_constraintVertical_bias="0.533" />
+    <TextView
+        android:id="@+id/about_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/about"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_menu_5"
+        app:layout_constraintEnd_toEndOf="@+id/view_menu_5"
+        app:layout_constraintStart_toStartOf="@+id/view_menu_5"
+        app:layout_constraintTop_toTopOf="@+id/view_menu_5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

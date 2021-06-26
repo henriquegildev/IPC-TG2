@@ -22,5 +22,6 @@
     <string name="logoDescription">App Logo</string>
     <string name="menuButtonDesc">Menu Button</string>
     <string name="topViewTitleText">Parte da Manhã</string>
-
+    <string name="about">Acerca</string>
+    <string name="home">Home</string>
 </resources>

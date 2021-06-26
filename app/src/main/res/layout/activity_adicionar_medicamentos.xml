@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Adicionar_Medicamentos">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/name_medicine"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider8" />
-
     <ImageButton
         android:id="@+id/back_button"
         android:layout_width="100dp"
@@ -46,105 +35,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="82dp"
-        android:layout_height="19dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/change_icon"
-        app:layout_constraintBottom_toTopOf="@+id/divider3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.19" />
-
     <View
-        android:id="@+id/divider3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/divider4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:layout_constraintVertical_bias="0.463" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider8" />
-
-    <View
-        android:id="@+id/divider5"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider4" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/divider5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider4"
-        app:layout_constraintVertical_bias="0.514" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/take_frequecy"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider4"
-        app:layout_constraintVertical_bias="0.505" />
-
-    <View
-        android:id="@+id/divider8"
+        android:id="@+id/divider_add_meds_1"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginTop="12dp"
@@ -155,30 +47,54 @@
         app:layout_constraintTop_toBottomOf="@+id/back_button" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_add_meds_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/name_medicine"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/medicine_placeholder"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
+
+    <View
+        android:id="@+id/divider_add_meds_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
+
+    <TextView
+        android:id="@+id/textView_add_meds_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="@string/icon_medicine"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_3"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2"
         app:layout_constraintVertical_bias="0.476" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/timing_to_take"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:layout_constraintVertical_bias="0.469" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -187,8 +103,104 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2"
         app:srcCompat="@mipmap/pill" />
+
+    <TextView
+        android:id="@+id/textView_add_meds_3"
+        android:layout_width="82dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/change_icon"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <View
+        android:id="@+id/divider_add_meds_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2" />
+
+    <TextView
+        android:id="@+id/textView_add_meds_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/timing_to_take"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <View
+        android:id="@+id/divider_add_meds_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3" />
+
+    <TextView
+        android:id="@+id/textView_add_meds_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/take_frequecy"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <View
+        android:id="@+id/divider_add_meds_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4" />
 
     <Button
         android:id="@+id/button2"
@@ -199,20 +211,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_5"
         app:layout_constraintVertical_bias="0.18" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:hint="@string/medicine_placeholder"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

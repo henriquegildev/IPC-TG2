@@ -12,11 +12,15 @@ import android.widget.MultiAutoCompleteTextView;
 public class Adicionar_Medicamentos extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
+    private ImageButton mainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_medicamentos);
+
+        mainButton = (ImageButton) findViewById(R.id.main_button);
+        mainButton.setOnClickListener(v -> openMain());
 
         backButton = (ImageButton) findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
@@ -36,6 +40,10 @@ public class Adicionar_Medicamentos extends AppCompatActivity {
     // Depois implementa-se o alterar a imagem do outro lado;
     // -----
     // Tenta implementar um calendário que dê para selecionar a data.
+
+    public void openMain() {
+        startActivity(new Intent(this, MainActivity.class));
+    }
 
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
