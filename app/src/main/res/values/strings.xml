@@ -25,6 +25,18 @@
     <string name="about">Acerca</string>
     <string name="home">Home</string>
     <string name="ativate_dark_mode">Ativar modo escuro</string>
+    <string name="notifications">Notificações</string>
+    <string name="login">Entrar</string>
+    <string name="login_more_info">Entrar com uma conta existente</string>
+    <string name="register">Criar conta</string>
+    <string name="register_more_info">Criar uma conta</string>
     <string name="select_med_icon">Selecione o ícone do medicamento</string>
+    <string name="rate_app">Avalie a APP</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_more_info">Local com perguntas recorrentes</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="change_language_more_info">Mudar o idioma da APP</string>
+    <string name="portuguese_english">Portuguese/English</string>
+    <string name="white_black">Branco/Preto</string>
     <string name="zero_time">00:00:00</string>
 </resources>
