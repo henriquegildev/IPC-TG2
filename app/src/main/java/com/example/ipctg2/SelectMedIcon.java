@@ -37,7 +37,7 @@ public class SelectMedIcon extends ListActivity {
         textView.setTypeface(Typeface.DEFAULT_BOLD);
         textView.setText("List of Med");
 
-        ListView listView= findViewById(android.R.id.list);
+        ListView listView= findViewById(R.id.listview);
         listView.addHeaderView(textView);
 
         // For populating list data
