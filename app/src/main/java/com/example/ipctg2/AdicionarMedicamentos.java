@@ -9,10 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 
-public class Adicionar_Medicamentos extends AppCompatActivity {
+public class AdicionarMedicamentos extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
-    private ImageButton mainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

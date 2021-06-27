@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.Switch;
+import android.widget.ToggleButton;
 
 public class Settings extends AppCompatActivity {
     private ImageButton backButton;
@@ -15,12 +19,14 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        backButton = (ImageButton) findViewById(R.id.back_button);
+        backButton = (ImageButton) findViewById(R.id.back_button3);
         backButton.setOnClickListener(v -> goBack());
 
-        menuButton = (ImageButton) findViewById(R.id.menu_button);
+        menuButton = (ImageButton) findViewById(R.id.menu_button5);
         menuButton.setOnClickListener(v -> openMenu());
+
     }
+
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }

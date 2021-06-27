@@ -71,7 +71,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openAddMeds(View view){
-        startActivity(new Intent(this, Adicionar_Medicamentos.class));
+        startActivity(new Intent(this, AdicionarMedicamentos.class));
     }
 
     public void openSettings(View view){
