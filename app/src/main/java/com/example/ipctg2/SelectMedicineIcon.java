@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SelectMedIcon extends AppCompatActivity {
+public class SelectMedicineIcon extends AppCompatActivity {
     private ImageButton backButton;
     private String nameIcon[] = {
             "Icon1", "Icon2", "Icon3", "Icon4", "Icon5"
@@ -46,8 +46,8 @@ public class SelectMedIcon extends AppCompatActivity {
         listView.addHeaderView(textView);
 
         // For populating list data
-        CustomMedList customCountryList = new CustomMedList(this, nameIcon, imageid);
-        listView.setAdapter(customCountryList);
+        CustomMedicineList medicineCustomList = new CustomMedicineList(this, nameIcon, imageid);
+        listView.setAdapter(medicineCustomList);
 
         listView.setOnItemClickListener((adapterView, view, position, l) -> Toast.makeText(getApplicationContext(),"You Selected "+nameIcon[position-1]+ " as Pill Icon ", Toast.LENGTH_SHORT).show());
 
