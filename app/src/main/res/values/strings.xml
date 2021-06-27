@@ -3,13 +3,14 @@
     <string name="action_settings">Definições</string>
     <string name="name_medicine">Nome Medicamento</string>
     <string name="icon_medicine">Ícone Medicamento</string>
-    <string name="timing_to_take">Horário Toma</string>
-    <string name="take_frequecy">Frequência Medicamento</string>
+    <string name="hour_to_take">Hora Toma</string>
+    <string name="med_dose">Dose Medicamento</string>
     <string name="add_medicine">Adicionar</string>
     <string name="medicine_in_plan">Medicamentos no Plano</string>
     <string name="previously_medicine_in_plan">Medicamentos Anteriormente no Plano</string>
     <string name="to_take_taken_medicine">Faltam/Tomados</string>
     <string name="medicine_placeholder">Exemplo: Ibuprofeno</string>
+    <string name="medicine_dose_placeholder">Exemplo: 100mg</string>
     <string name="medicine_name_1">Ibuprofeno</string>
     <string name="medicine_name_2">Clavamox</string>
     <string name="medicine_name_3">Kestine</string>
@@ -38,4 +39,10 @@
     <string name="portuguese_english">Portuguese/English</string>
     <string name="white_black">Branco/Preto</string>
     <string name="zero_time">00:00:00</string>
+    <string name="med_start_date">Data inicio</string>
+    <string name="med_finish_date">Data fim</string>
+    <string name="select_the_start_date">Selecione a data de inicio</string>
+    <string name="select_the_finish_date">Selecione a data de fim</string>
+    <string name="select_the_take_hour">Selecione a hora da toma</string>
+    <string name="select_take_hour">Hora toma</string>
 </resources>

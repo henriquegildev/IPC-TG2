@@ -6,225 +6,330 @@
     android:layout_height="match_parent"
     tools:context=".AdicionarMedicamentos">
 
-    <ImageButton
-        android:id="@+id/menu_button4"
-        android:layout_width="61dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:background="@null"
-        android:backgroundTint="@null"
-        android:contentDescription="@string/menu_button_descrition"
-        android:hapticFeedbackEnabled="false"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="false"
-        android:background="@null"
-        android:cropToPadding="false"
-        android:scaleX="2.5"
-        android:scaleY="2.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/back_button" />
-
-    <View
-        android:id="@+id/divider_add_meds_1"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="90dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView_add_meds_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/name_medicine"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:hint="@string/medicine_placeholder"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
-
-    <View
-        android:id="@+id/divider_add_meds_2"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
+        android:layout_height="match_parent"
+        tools:context=".AdicionarMedicamentos">
 
-    <TextView
-        android:id="@+id/textView_add_meds_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/icon_medicine"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2"
-        app:layout_constraintVertical_bias="0.476" />
+        <TextView
+            android:id="@+id/select_med_finish_date"
+            android:layout_width="86dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/med_finish_date"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_select_start_date" />
 
-    <View
-        android:id="@+id/change_icon_view"
-        android:layout_width="103dp"
-        android:layout_height="111dp"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="218dp" />
+        <ImageButton
+            android:id="@+id/user_select_finish_date"
+            android:layout_width="64dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_med_start_date"
+            app:srcCompat="@mipmap/cal_last" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="82dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2"
-        app:srcCompat="@mipmap/pill" />
+        <View
+            android:id="@+id/divider_add_meds_6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_add_meds_27" />
 
-    <TextView
-        android:id="@+id/textView_add_meds_3"
-        android:layout_width="82dp"
-        android:layout_height="19dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/change_icon"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.19" />
+        <TextView
+            android:id="@+id/textView_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/select_the_start_date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3" />
 
-    <View
-        android:id="@+id/divider_add_meds_3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2" />
+        <TextView
+            android:id="@+id/textView_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="75dp"
+            android:text="@string/select_the_finish_date"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_20" />
 
-    <TextView
-        android:id="@+id/textView_add_meds_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/timing_to_take"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3"
-        app:layout_constraintVertical_bias="0.469" />
+        <ImageButton
+            android:id="@+id/menu_button4"
+            android:layout_width="61dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:contentDescription="@string/menu_button_descrition"
+            android:hapticFeedbackEnabled="false"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3"
-        app:layout_constraintVertical_bias="0.463" />
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/back_button" />
 
-    <View
-        android:id="@+id/divider_add_meds_4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3" />
+        <View
+            android:id="@+id/divider_add_meds_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="90dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView_add_meds_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/take_frequecy"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4"
-        app:layout_constraintVertical_bias="0.505" />
+        <TextView
+            android:id="@+id/textView_add_meds_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/name_medicine"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4"
-        app:layout_constraintVertical_bias="0.514" />
+        <MultiAutoCompleteTextView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/medicine_placeholder"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_1" />
 
-    <View
-        android:id="@+id/divider_add_meds_5"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="25dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4" />
+        <View
+            android:id="@+id/divider_add_meds_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="160dp"
-        android:layout_height="59dp"
-        android:text="@string/add_medicine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_5"
-        app:layout_constraintVertical_bias="0.18" />
+        <TextView
+            android:id="@+id/textView_add_meds_23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/icon_medicine"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2" />
+
+        <View
+            android:id="@+id/change_icon_view"
+            android:layout_width="103dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="82dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_2"
+            app:srcCompat="@mipmap/pill" />
+
+        <TextView
+            android:id="@+id/textView_add_meds_3"
+            android:layout_width="82dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/change_icon"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/divider_add_meds_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <View
+            android:id="@+id/divider_add_meds_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_add_meds_23" />
+
+        <TextView
+            android:id="@+id/textView_add_meds_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/med_dose"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_6" />
+
+        <View
+            android:id="@+id/divider_add_meds_5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_add_meds_5" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="144dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_medicine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_5" />
+
+        <TextView
+            android:id="@+id/select_med_take_hour"
+            android:layout_width="86dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/hour_to_take"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_select_hour_take" />
+
+        <View
+            android:id="@+id/divider_add_meds_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_21" />
+
+        <ImageButton
+            android:id="@+id/user_select_start_date"
+            android:layout_width="64dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_3"
+            app:srcCompat="@mipmap/cal_first" />
+
+        <ImageButton
+            android:id="@+id/user_select_hour_take"
+            android:layout_width="64dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4"
+            app:srcCompat="@mipmap/clock" />
+
+        <TextView
+            android:id="@+id/select_med_start_date"
+            android:layout_width="86dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/med_start_date"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_select_start_date" />
+
+        <TextView
+            android:id="@+id/textView_add_meds_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/hour_to_take"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_4" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="@string/medicine_dose_placeholder"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

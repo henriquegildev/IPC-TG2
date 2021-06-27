@@ -2,16 +2,32 @@ package com.example.ipctg2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
+import android.widget.TextView;
+
+import java.util.Calendar;
 
 public class AdicionarMedicamentos extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
+    ImageButton selectDate1;
+    ImageButton selectDate2;
+    TextView date1;
+    TextView date2;
+    DatePickerDialog datePickerDialog;
+    int year;
+    int month;
+    int dayOfMonth;
+    Calendar calendar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +44,50 @@ public class AdicionarMedicamentos extends AppCompatActivity {
         MultiAutoCompleteTextView textView = findViewById(R.id.editTextTextPersonName);
         textView.setAdapter(adapter);
         textView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+
+        selectDate1 = findViewById(R.id.user_select_start_date);
+        date1 = findViewById(R.id.select_med_start_date);
+
+        selectDate2 = findViewById(R.id.user_select_finish_date);
+        date2 = findViewById(R.id.select_med_finish_date);
+
+        selectDate1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calendar = Calendar.getInstance();
+                year = calendar.get(Calendar.YEAR);
+                month = calendar.get(Calendar.MONTH);
+                dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(AdicionarMedicamentos.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                                date1.setText(day + "/" + (month + 1) + "/" + year);
+                            }
+                        }, year, month, dayOfMonth);
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+                datePickerDialog.show();
+            }
+        });
+
+        selectDate2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calendar = Calendar.getInstance();
+                year = calendar.get(Calendar.YEAR);
+                month = calendar.get(Calendar.MONTH);
+                dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(AdicionarMedicamentos.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                                date2.setText(day + "/" + (month + 1) + "/" + year);
+                            }
+                        }, year, month, dayOfMonth);
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+                datePickerDialog.show();
+            }
+        });
     }
 
     //TODO:
