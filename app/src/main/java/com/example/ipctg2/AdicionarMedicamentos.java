@@ -17,6 +17,7 @@ import java.util.Calendar;
 public class AdicionarMedicamentos extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
+    private View changeiconview;
     ImageButton selectDate1;
     ImageButton selectDate2;
     TextView date1;
@@ -39,6 +40,9 @@ public class AdicionarMedicamentos extends AppCompatActivity {
 
         menuButton = findViewById(R.id.menu_button4);
         menuButton.setOnClickListener(v -> openMenu());
+
+        changeiconview = findViewById(R.id.change_icon_view);
+        changeiconview.setOnClickListener(v -> openSelectMedIcon(v));
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
         MultiAutoCompleteTextView textView = findViewById(R.id.editTextTextPersonName);
@@ -100,10 +104,7 @@ public class AdicionarMedicamentos extends AppCompatActivity {
     public void openMain(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
-    public void openSelectMedIcon(View view) {
-        startActivity(new Intent(this, MainActivity.class));
-    }
-
+    public void openSelectMedIcon(View view) { startActivity(new Intent(this, SelectMedIcon.class)); }
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }

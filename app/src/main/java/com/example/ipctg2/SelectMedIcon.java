@@ -10,12 +10,18 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SelectMedIcon extends ListActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SelectMedIcon extends AppCompatActivity {
     private ImageButton backButton;
-    private ListView listView;
     private String nameMed[] = {
             "Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"
     };
+
+    //TODO:
+    // SE HOUVER TEMPO!
+    // ARRANJAR ICONS MAIS ESTILISTICOS PARA OS MEDICAMENTOS,
+    // INVÉS DE SEREM IMAGENS REAIS, FICA ESTRANHO..
 
     private Integer imageid[] = {
             R.mipmap.med1,
@@ -30,14 +36,14 @@ public class SelectMedIcon extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_med_icon);
 
-        backButton = findViewById(R.id.back_button);
+        backButton = findViewById(R.id.back_button2);
         backButton.setOnClickListener(v -> goBack());
 
         TextView textView = new TextView(this);
         textView.setTypeface(Typeface.DEFAULT_BOLD);
-        textView.setText("List of Med");
+        textView.setText("List of Pill Icons");
 
-        ListView listView= findViewById(android.R.id.list);
+        ListView listView = findViewById(android.R.id.list);
         listView.addHeaderView(textView);
 
         // For populating list data
@@ -47,7 +53,7 @@ public class SelectMedIcon extends ListActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getApplicationContext(),"You Selected "+nameMed[position-1]+ " as Country", Toast.LENGTH_SHORT).show();        }
+                Toast.makeText(getApplicationContext(),"You Selected "+nameMed[position-1]+ " as Pill Icon ", Toast.LENGTH_SHORT).show();        }
         });
 
     }
