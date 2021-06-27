@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectMedIcon">
+    tools:context=".SelectMedicineIcon">
 
     <View
         android:id="@+id/divider_add_meds_"
@@ -35,20 +35,22 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:text="@string/select_med_icon"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_meds_" />
 
     <ListView
         android:id="@android:id/list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="345dp"
+        android:layout_height="644dp"
         android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="16dp"></ListView>
+        app:layout_constraintVertical_bias="0.0"></ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

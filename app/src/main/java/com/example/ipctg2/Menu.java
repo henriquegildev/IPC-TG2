@@ -67,11 +67,11 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openMeds(View view){
-        startActivity(new Intent(this, Medicamentos.class));
+        startActivity(new Intent(this, Medicine.class));
     }
 
     public void openAddMeds(View view){
-        startActivity(new Intent(this, AdicionarMedicamentos.class));
+        startActivity(new Intent(this, AddMedicine.class));
     }
 
     public void openSettings(View view){

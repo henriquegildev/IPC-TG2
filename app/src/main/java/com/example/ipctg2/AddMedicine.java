@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
@@ -17,7 +16,7 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-public class AdicionarMedicamentos extends AppCompatActivity {
+public class AddMedicine extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
     private View changeiconview;
@@ -72,7 +71,7 @@ public class AdicionarMedicamentos extends AppCompatActivity {
                 year = calendar.get(Calendar.YEAR);
                 month = calendar.get(Calendar.MONTH);
                 dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-                datePickerDialog = new DatePickerDialog(AdicionarMedicamentos.this,
+                datePickerDialog = new DatePickerDialog(AddMedicine.this,
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
@@ -91,7 +90,7 @@ public class AdicionarMedicamentos extends AppCompatActivity {
                 year = calendar.get(Calendar.YEAR);
                 month = calendar.get(Calendar.MONTH);
                 dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-                datePickerDialog = new DatePickerDialog(AdicionarMedicamentos.this,
+                datePickerDialog = new DatePickerDialog(AddMedicine.this,
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
@@ -113,7 +112,7 @@ public class AdicionarMedicamentos extends AppCompatActivity {
                 currentHour = calendar.get(Calendar.HOUR_OF_DAY);
                 currentMinute = calendar.get(Calendar.MINUTE);
 
-                timePickerDialog = new TimePickerDialog(AdicionarMedicamentos.this, new TimePickerDialog.OnTimeSetListener() {
+                timePickerDialog = new TimePickerDialog(AddMedicine.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int hourOfDay, int minutes) {
                         if (hourOfDay >= 12) {
@@ -140,7 +139,7 @@ public class AdicionarMedicamentos extends AppCompatActivity {
     public void openMain(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
-    public void openSelectMedIcon(View view) { startActivity(new Intent(this, SelectMedIcon.class)); }
+    public void openSelectMedIcon(View view) { startActivity(new Intent(this, SelectMedicineIcon.class)); }
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }
