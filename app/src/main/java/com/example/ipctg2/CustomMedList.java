@@ -31,6 +31,6 @@ public class CustomMedList extends ArrayAdapter {
 
         textViewNameMed.setText(medNames[position]);
         medIcon.setImageResource(imageid[position]);
-        return  row;
+        return row;
     }
 }
