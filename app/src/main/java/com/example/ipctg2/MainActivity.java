@@ -1,14 +1,11 @@
 package com.example.ipctg2;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.icu.text.DateFormat;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,7 +16,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
     private ImageButton menu_button;
     private ListView listView;
-    ArrayList<Medicine> medList = new ArrayList<>();
+    ArrayList<MedicineObject> medList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
