@@ -254,7 +254,7 @@
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/user_select_hour_take" />
+            app:layout_constraintTop_toBottomOf="@+id/user_select_hour" />
 
         <View
             android:id="@+id/divider_add_meds_4"
@@ -282,7 +282,7 @@
             app:srcCompat="@mipmap/cal_first" />
 
         <ImageButton
-            android:id="@+id/user_select_hour_take"
+            android:id="@+id/user_select_hour"
             android:layout_width="64dp"
             android:layout_height="61dp"
             android:layout_marginTop="10dp"
