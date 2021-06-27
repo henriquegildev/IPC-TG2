@@ -1,6 +1,5 @@
 package com.example.ipctg2;
 
-import android.app.ListActivity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -14,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SelectMedIcon extends AppCompatActivity {
     private ImageButton backButton;
-    private String nameMed[] = {
-            "Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"
+    private String nameIcon[] = {
+            "Icon1", "Icon2", "Icon3", "Icon4", "Icon5"
     };
 
     //TODO:
@@ -47,14 +46,10 @@ public class SelectMedIcon extends AppCompatActivity {
         listView.addHeaderView(textView);
 
         // For populating list data
-        CustomMedList customCountryList = new CustomMedList(this, nameMed, imageid);
+        CustomMedList customCountryList = new CustomMedList(this, nameIcon, imageid);
         listView.setAdapter(customCountryList);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getApplicationContext(),"You Selected "+nameMed[position-1]+ " as Pill Icon ", Toast.LENGTH_SHORT).show();        }
-        });
+        listView.setOnItemClickListener((adapterView, view, position, l) -> Toast.makeText(getApplicationContext(),"You Selected "+nameIcon[position-1]+ " as Pill Icon ", Toast.LENGTH_SHORT).show());
 
     }
 

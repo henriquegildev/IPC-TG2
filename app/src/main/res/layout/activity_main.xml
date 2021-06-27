@@ -51,6 +51,7 @@
         android:layout_width="309dp"
         android:layout_height="203dp"
         android:layout_marginTop="24dp"
+        android:clickable="true"
         android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +62,7 @@
         android:layout_width="309dp"
         android:layout_height="203dp"
         android:layout_marginTop="24dp"
+        android:clickable="true"
         android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +78,17 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/topViewTitleEvening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/top_view_title_text_evening"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <TextView
         android:id="@+id/currentTime"

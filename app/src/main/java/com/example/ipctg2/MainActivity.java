@@ -32,10 +32,19 @@ public class MainActivity extends AppCompatActivity {
         menu_button = findViewById(R.id.menu_button3);
         menu_button.setOnClickListener(v -> openMenu(v));
 
+        View viewMorning = findViewById(R.id.view);
+        View viewEvening = findViewById(R.id.view2);
+        viewMorning.setOnClickListener(v -> openMorningMeds(v));
+        viewEvening.setOnClickListener(v -> openEveningMeds(v));
+
     }
 
     public void openMenu(View view) {
         startActivity(new Intent(this, Menu.class));
+    }
+    public void openMorningMeds(View view) { startActivity(new Intent(this, PlanForDay.class)); }
+    public void openEveningMeds(View view) {
+        startActivity(new Intent(this, PlanForDay.class));
     }
 
 

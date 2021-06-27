@@ -45,4 +45,6 @@
     <string name="select_the_finish_date">Selecione a data de fim</string>
     <string name="select_the_take_hour">Selecione a hora da toma</string>
     <string name="select_take_hour">Hora toma</string>
+    <string name="top_view_title_text_evening">Parte da Tarde</string>
+    <string name="planforday">Medicamentos do Dia</string>
 </resources>
