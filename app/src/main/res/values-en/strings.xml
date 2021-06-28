@@ -38,5 +38,6 @@
     <string name="change_language_more_info">Change APP language</string>
     <string name="portuguese_english">Portuguese/English</string>
     <string name="white_black">White/Black</string>
+    <string name="top_view_title_text_evening">Evening</string>
     <string name="zero_time">00:00:00</string>
 </resources>

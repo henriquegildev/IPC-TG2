@@ -17,7 +17,20 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton menu_button;
     private ListView listView;
     ArrayList<MedicineObject> medList = new ArrayList<>();
+    private String[] nameIcon = {"Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"};
 
+    //TODO:
+    // SE HOUVER TEMPO!
+    // ARRANJAR ICONS MAIS ESTILISTICOS PARA OS MEDICAMENTOS,
+    // INVÉS DE SEREM IMAGENS REAIS, FICA ESTRANHO..
+
+    private Integer[] imageid = {
+            R.mipmap.med1,
+            R.mipmap.med2,
+            R.mipmap.med3,
+            R.mipmap.med4,
+            R.mipmap.med5,
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         View viewEvening = findViewById(R.id.view2);
         viewMorning.setOnClickListener(v -> openMorningMeds(v));
         viewEvening.setOnClickListener(v -> openEveningMeds(v));
+
+        ListView listView = findViewById(android.R.id.list);
+        //listView.addHeaderView(textView);
+        // For populating list data
+        DayMedicineCustomList customDayMedicineList = new DayMedicineCustomList(this, nameIcon, imageid);
+        listView.setAdapter(customDayMedicineList);
 
     }
 
