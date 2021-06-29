@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@mipmap/pill" />
+        app:srcCompat="@mipmap/med1" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -95,6 +95,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="35dp"
+        android:progress="35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -105,6 +106,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="35dp"
+        android:progress="90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -143,7 +145,7 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@mipmap/pill" />
+        app:srcCompat="@mipmap/med2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -193,6 +195,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="35dp"
+        android:progress="60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 

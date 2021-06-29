@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import java.net.Inet4Address;
@@ -15,6 +16,9 @@ import java.net.Inet4Address;
 public class Medicine extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
+    private ImageView imageView;
+    private ImageView imageView2;
+    private ImageView imageView3;
     String selectedMedicine;
 
 
@@ -29,14 +33,14 @@ public class Medicine extends AppCompatActivity {
         menuButton = findViewById(R.id.menu_button);
         menuButton.setOnClickListener(v -> openMenu());
 
+        imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(v -> openMed1SideEffects(v));
     }
 
+    private void openMed1SideEffects(View v) {
+        startActivity(new Intent(this, Menu.class));
+    }
 
-
-    //TODO:
-    // Organizar esta confusão;
-    // Aproximar ao que desenhámos no moqups;
-    // Implementa o logotipo como uma ImageButton, e redireciona para a página principal.
 
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));

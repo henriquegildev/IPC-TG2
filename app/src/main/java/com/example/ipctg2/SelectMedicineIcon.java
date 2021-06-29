@@ -1,10 +1,12 @@
 package com.example.ipctg2;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,10 +19,6 @@ public class SelectMedicineIcon extends AppCompatActivity {
             "Icon1", "Icon2", "Icon3", "Icon4", "Icon5"
     };
 
-    //TODO:
-    // SE HOUVER TEMPO!
-    // ARRANJAR ICONS MAIS ESTILISTICOS PARA OS MEDICAMENTOS,
-    // INVÉS DE SEREM IMAGENS REAIS, FICA ESTRANHO..
 
     private Integer imageid[] = {
             R.mipmap.med1,
@@ -44,7 +42,6 @@ public class SelectMedicineIcon extends AppCompatActivity {
 
         ListView listView = findViewById(android.R.id.list);
         listView.addHeaderView(textView);
-
         // For populating list data
         CustomMedicineList medicineCustomList = new CustomMedicineList(this, nameIcon, imageid);
         listView.setAdapter(medicineCustomList);

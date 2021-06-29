@@ -12,11 +12,13 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 public class AddMedicine extends AppCompatActivity {
@@ -59,6 +61,7 @@ public class AddMedicine extends AppCompatActivity {
 
         buttonAddMedicine = findViewById(R.id.button_add_medicine);
         buttonAddMedicine.setOnClickListener(v -> saveMedInfo(v));
+
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
@@ -137,17 +140,13 @@ public class AddMedicine extends AppCompatActivity {
         });
     }
 
-    //TODO:
-    // Aproximar o design da activity ao que temos no moqups;
-    // Tenta implementar uma Lista de imagens, estilo menu dropdown;
-    // Depois implementa-se o alterar a imagem do outro lado;
-    // -----
-    // Tenta implementar um calendário que dê para selecionar a data.
-
     public void openMain(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
-    public void openSelectMedIcon(View view) { startActivity(new Intent(this, SelectMedicineIcon.class)); }
+    public void openSelectMedIcon(View view) {
+        Intent  intent = new Intent(this, SelectMedicineIcon.class);
+        startActivity(intent);
+    }
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }
