@@ -6,8 +6,8 @@
     <ImageView
 
         android:id="@+id/imageid2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
 
         android:layout_row="0"
         android:layout_rowSpan="2"
@@ -22,6 +22,7 @@
         android:layout_column="1"
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
+        android:fontFamily="@font/ubuntu"
         android:gravity="bottom|center|left"
         android:textAlignment="gravity"
         android:textColor="@color/black"
