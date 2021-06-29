@@ -8,26 +8,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class AddMedicine extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
+    private Button buttonAddMedicine;
     private View changeiconview;
     ImageButton selectDate1;
     ImageButton selectDate2;
     TextView date1;
     TextView date2;
     DatePickerDialog datePickerDialog;
-    int year;
-    int month;
-    int dayOfMonth;
+    public int year;
+    public int month;
+    public int dayOfMonth;
     Calendar calendar;
 
     ImageButton userChooseTime;
@@ -52,6 +56,10 @@ public class AddMedicine extends AppCompatActivity {
 
         changeiconview = findViewById(R.id.change_icon_view);
         changeiconview.setOnClickListener(v -> openSelectMedIcon(v));
+
+        buttonAddMedicine = findViewById(R.id.button_add_medicine);
+        buttonAddMedicine.setOnClickListener(v -> saveMedInfo(v));
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
         MultiAutoCompleteTextView textView = findViewById(R.id.editTextTextPersonName);
@@ -147,6 +155,21 @@ public class AddMedicine extends AppCompatActivity {
         super.finish();
     }
 
+
+    EditText editText = findViewById(R.id.editText);
+
+
+    public void saveMedInfo()  {
+        String saveMedInfo
+        String text = editText.getText().toString();
+
+        if (text.length()==0){
+            Toast.makeText(this, "Missing data", Toast.LENGTH_SHORT).show();
+        }else{
+            text
+        }
+    }
+
     //TODO:
     // Search for JSON file with Medicine, maybe a medicine API;
     // Read from JSON file;
@@ -154,4 +177,5 @@ public class AddMedicine extends AppCompatActivity {
     private static final String[] MedicineList = new String[] {
             "Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"
     };
+
 }
