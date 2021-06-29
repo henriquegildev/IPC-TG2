@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 
 import java.net.Inet4Address;
 
@@ -15,6 +16,7 @@ public class Medicine extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
     String selectedMedicine;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,8 @@ public class Medicine extends AppCompatActivity {
         menuButton.setOnClickListener(v -> openMenu());
 
     }
+
+
 
     //TODO:
     // Organizar esta confusão;

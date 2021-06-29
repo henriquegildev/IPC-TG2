@@ -45,12 +45,13 @@
 
     <ListView
         android:id="@android:id/list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="341dp"
+        android:layout_height="564dp"
         android:layout_marginTop="15dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

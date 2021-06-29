@@ -42,7 +42,7 @@ public class AddMedicine extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adicionar_medicamentos);
+        setContentView(R.layout.activity_add_medicine);
 
         backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> goBack());
