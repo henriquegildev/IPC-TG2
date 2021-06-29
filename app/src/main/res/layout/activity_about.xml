@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="331dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/about_authors_names"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
     <ImageButton
         android:id="@+id/back_button4"
         android:layout_width="100dp"
@@ -50,13 +67,14 @@
         android:id="@+id/textView23"
         android:layout_width="147dp"
         android:layout_height="53dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/ubuntu"
         android:text="@string/about"
         android:textAllCaps="true"
         android:textColor="@color/black"
-        android:textSize="27sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider_menu_7" />
 
@@ -64,7 +82,7 @@
         android:id="@+id/imageView5"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:adjustViewBounds="false"
         android:scaleType="fitXY"
         android:scaleX="2"
@@ -77,20 +95,50 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="371dp"
-        android:layout_height="332dp"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:layout_width="327dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="44dp"
+        android:autoSizeTextType="none"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/about_text"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="241dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:layout_width="331dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/about_authors"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/app_version"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.78" />
 </androidx.constraintlayout.widget.ConstraintLayout>
