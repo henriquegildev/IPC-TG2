@@ -49,7 +49,12 @@ public class SelectMedicineIcon extends AppCompatActivity {
         CustomMedicineList medicineCustomList = new CustomMedicineList(this, nameIcon, imageid);
         listView.setAdapter(medicineCustomList);
 
-        listView.setOnItemClickListener((adapterView, view, position, l) -> Toast.makeText(getApplicationContext(),"You Selected "+nameIcon[position-1]+ " as Pill Icon ", Toast.LENGTH_SHORT).show());
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(SelectMedicineIcon.this.getApplicationContext(), "You Selected " + nameIcon[position - 1] + " as Pill Icon ", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

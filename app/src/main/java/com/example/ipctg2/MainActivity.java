@@ -6,9 +6,12 @@ import android.content.Intent;
 import android.icu.text.DateFormat;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -52,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
         // For populating list data
         DayMedicineCustomList customDayMedicineList = new DayMedicineCustomList(this, nameIcon, imageid);
         listView.setAdapter(customDayMedicineList);
-
+        CheckBox checkBox = findViewById(R.id.checkBox);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(MainActivity.this.getApplicationContext(), "You Selected " + nameIcon[position - 1], Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void openMenu(View view) {
@@ -62,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
     public void openEveningMeds(View view) {
         startActivity(new Intent(this, PlanForDay.class));
     }
-
 
     public void displayTime(TextView time){
         Thread timeThread = new Thread(){
