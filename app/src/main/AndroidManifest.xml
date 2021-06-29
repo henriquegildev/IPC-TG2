@@ -11,7 +11,7 @@
         android:theme="@style/Theme.IPCTG2">
         <activity android:name=".SelectMedicineIcon"/>
         <activity android:name=".PlanForDay"/>
-        <activity android:name=".Settings" />
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".About" />
         <activity android:name=".Menu" />
         <activity android:name=".Medicine" />

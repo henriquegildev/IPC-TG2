@@ -35,7 +35,8 @@
         android:layout_row="0"
         android:layout_column="2"
         android:scaleX="2"
-        android:scaleY="2" />
+        android:scaleY="2"
+        android:onClick="onCheckboxClicked"/>
 
 
 </GridLayout>

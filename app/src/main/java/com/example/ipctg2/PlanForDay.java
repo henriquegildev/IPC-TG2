@@ -53,8 +53,6 @@ public class PlanForDay extends AppCompatActivity {
                 .getBoolean("checkBox", false);
         checkBox.setChecked(checked);
 
-
-
         listView.setOnItemClickListener((adapterView, view, position, l) -> {
             if(checkBox.isChecked()){
                 Toast.makeText(getApplicationContext(),"Medicine "+nameIcon[position-1]+ " marked NOT TAKEN ", Toast.LENGTH_SHORT).show();

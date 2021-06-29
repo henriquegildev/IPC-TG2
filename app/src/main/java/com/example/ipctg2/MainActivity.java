@@ -1,26 +1,36 @@
 package com.example.ipctg2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.icu.text.DateFormat;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.text.ChoiceFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton menu_button;
     private ListView listView;
     ArrayList<MedicineObject> medList = new ArrayList<>();
     private String[] nameIcon = {"Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"};
+    private String filePath = "C:\\Git\\IPC-TG2\\app";
 
     //TODO:
     // SE HOUVER TEMPO!
@@ -50,18 +60,19 @@ public class MainActivity extends AppCompatActivity {
         viewMorning.setOnClickListener(v -> openMorningMeds(v));
         viewEvening.setOnClickListener(v -> openEveningMeds(v));
 
-        ListView listView = findViewById(android.R.id.list);
+        listView = findViewById(android.R.id.list);
         //listView.addHeaderView(textView);
         // For populating list data
         DayMedicineCustomList customDayMedicineList = new DayMedicineCustomList(this, nameIcon, imageid);
         listView.setAdapter(customDayMedicineList);
-        CheckBox checkBox = findViewById(R.id.checkBox);
+        //CheckBox checkBox = findViewById(R.id.checkBox);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Toast.makeText(MainActivity.this.getApplicationContext(), "You Selected " + nameIcon[position - 1], Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     public void openMenu(View view) {
@@ -72,6 +83,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, PlanForDay.class));
     }
 
+    public int getPosition(){
+        return 0;
+    }
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        // Check which checkbox was clicked
+        int i = listView.getCheckedItemPosition();
+        System.out.println(i + " " + "ischecked: " + checked);
+    }
     public void displayTime(TextView time){
         Thread timeThread = new Thread(){
             public void run(){

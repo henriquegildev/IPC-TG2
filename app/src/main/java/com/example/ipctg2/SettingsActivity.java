@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.ToggleButton;
 
-public class Settings extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity {
     private ImageButton backButton;
     private ImageButton menuButton;
 
