@@ -156,18 +156,18 @@ public class AddMedicine extends AppCompatActivity {
     }
 
 
-    EditText editText = findViewById(R.id.editText);
+   // EditText editText = findViewById(R.id.editText);
 
 
-    public void saveMedInfo()  {
-        String saveMedInfo
-        String text = editText.getText().toString();
-
-        if (text.length()==0){
-            Toast.makeText(this, "Missing data", Toast.LENGTH_SHORT).show();
-        }else{
-            text
-        }
+    public void saveMedInfo(View view)  {
+//        String saveMedInfo;
+//        String text = editText.getText().toString();
+//
+//        if (text.length()==0){
+//            Toast.makeText(this, "Missing data", Toast.LENGTH_SHORT).show();
+//        }else{
+//            text
+//        }
     }
 
     //TODO:
