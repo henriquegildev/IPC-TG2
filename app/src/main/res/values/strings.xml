@@ -49,8 +49,8 @@
     <string name="plan_for_day">Medicamentos do Dia</string>
     <string name="about_text">Este projecto foi desenvolvido no ambito da UC Interação Pesssoa Computador do Curso de Engenharia Informática da ESTIG, orientada pelo docente Luís Garcia.</string>
     <string name="about_authors">Autores:</string>
-    <string name="about_authors_names_1">Henrique Gil(20435)</string>
-    <string name="about_authors_names_2">Gabriel Gomes(19932)</string>
+    <string name="about_authors_name_1">Henrique Gil(20435)</string>
+    <string name="about_authors_name_2">Gabriel Gomes(19932)</string>
     <string name="app_version">Versão: 0.0.2</string>
     <string name="side_effects">Efeitos Secundários</string>
     <string name="side_effects_med1">Sendo um anti-inflamatório não esteroide (AINE), o ibuprofeno partilha de todos os efeitos colaterais da classe.  Os principais efeitos colaterais do ibuprofeno, em ordem decrescente de frequência, são: dispepsia (queimação no estômago), náuseas, azia, tonturas, visão turva, zumbidos no ouvidos, retenção de líquidos e edemas, prisão de ventre, excesso de gases, coceiras e diminuição do volume urinário.  Duas complicações graves do ibuprofeno são a úlcera péptica e a insuficiência renal, que podem surgir com o uso prolongado de qualquer AINE. Pacientes que fazem uso crônico de ibuprofeno também apresentam maior risco de complicações cardiovasculares.</string>
