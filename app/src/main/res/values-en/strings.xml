@@ -41,7 +41,7 @@
     <string name="white_black">White/Black</string>
     <string name="top_view_title_text_evening">Evening</string>
     <string name="zero_time">00:00:00</string>
-    <string name="med_start_date">Starting Date</string>
+    <string name="med_start_date">Start Date</string>
     <string name="med_finish_date">End Date</string>
     <string name="select_the_start_date">Select Starting Date</string>
     <string name="select_the_finish_date">Select End Date</string>
