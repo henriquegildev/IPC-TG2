@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IPCTG2">
         <activity android:name=".SelectMedicineIcon"/>
+        <activity android:name=".Med1SideEffects"/>
+        <activity android:name=".Med2SideEffects"/>
+        <activity android:name=".Med3SideEffects"/>
         <activity android:name=".PlanForDay"/>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".About" />

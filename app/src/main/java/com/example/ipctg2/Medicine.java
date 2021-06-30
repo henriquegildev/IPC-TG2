@@ -34,12 +34,20 @@ public class Medicine extends AppCompatActivity {
         menuButton.setOnClickListener(v -> openMenu());
 
         imageView = findViewById(R.id.imageView);
-        imageView.setOnClickListener(v -> openMed1SideEffects(v));
+        imageView.setOnClickListener(v -> openMed1SideEffects());
+
+        imageView2 = findViewById(R.id.imageView2);
+        imageView2.setOnClickListener(v -> openMed2SideEffects());
+
+        imageView3 = findViewById(R.id.imageView3);
+        imageView3.setOnClickListener(v -> openMed3SideEffects());
     }
 
-    private void openMed1SideEffects(View v) {
-        startActivity(new Intent(this, Menu.class));
-    }
+    private void openMed3SideEffects() { startActivity(new Intent(this, Med3SideEffects.class));}
+
+    private void openMed2SideEffects() { startActivity(new Intent(this, Med2SideEffects.class));}
+
+    private void openMed1SideEffects() { startActivity(new Intent(this, Med1SideEffects.class)); }
 
 
     public void openMenu() {
