@@ -49,7 +49,8 @@
     <string name="plan_for_day">Medicine of the Day</string>
     <string name="about_text">Este projecto foi desenvolvido no ambito da UC Interação Pesssoa Computador do Curso de Engenharia Informática da ESTIG, orientada pelo docente Luís Garcia.</string>
     <string name="about_authors">Authors:</string>
-    <string name="about_authors_names">Henrique Gil(20435) e Gabriel Gomes(19932)</string>
+    <string name="about_authors_names_1">Henrique Gil(20435)</string>
+    <string name="about_authors_names_2">Gabriel Gomes(19932)</string>
     <string name="app_version">Version: 0.0.2</string>
     <string name="side_effects">Side Effects</string>
 </resources>
