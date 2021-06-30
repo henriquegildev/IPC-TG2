@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton menu_button;
     private ListView listView;
     ArrayList<MedicineObject> medList = new ArrayList<>();
-    private String[] nameIcon = {"Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"};
+    private String[] nameIcon = {"Kestine", "Paracetamol", "Ibuprofeno"};
+    private String[] nameIcon2 = {"Voltaren", "Klacid"};
     private String filePath = "C:\\Git\\IPC-TG2\\app";
 
     //TODO:
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
             R.mipmap.med1,
             R.mipmap.med2,
             R.mipmap.med3,
+    };
+    private Integer[] imageid2 = {
             R.mipmap.med4,
             R.mipmap.med5,
     };
@@ -62,10 +65,13 @@ public class MainActivity extends AppCompatActivity {
         viewEvening.setOnClickListener(v -> openEveningMeds(v));
 
         listView = findViewById(android.R.id.list);
+        ListView listView2 = findViewById(R.id.list2);
         //listView.addHeaderView(textView);
         // For populating list data
         DayMedicineCustomList customDayMedicineList = new DayMedicineCustomList(this, nameIcon, imageid);
         listView.setAdapter(customDayMedicineList);
+        DayMedicineCustomList customDayMedicineList2 = new DayMedicineCustomList(this, nameIcon2, imageid2);
+        listView2.setAdapter(customDayMedicineList2);
         //CheckBox checkBox = findViewById(R.id.checkBox);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
