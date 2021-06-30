@@ -138,6 +138,15 @@ public class AddMedicine extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+
+        Button add_medicine = findViewById(R.id.button_add_medicine);
+        add_medicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(AddMedicine.this.getApplicationContext(), "Medicine Added with success.", Toast.LENGTH_LONG).show();
+            }
+            });
+
     }
 
     public void openMain(View view) {

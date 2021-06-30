@@ -40,4 +40,16 @@
     <string name="white_black">White/Black</string>
     <string name="top_view_title_text_evening">Evening</string>
     <string name="zero_time">00:00:00</string>
+    <string name="med_start_date">Starting Date</string>
+    <string name="med_finish_date">End Date</string>
+    <string name="select_the_start_date">Select Starting Date</string>
+    <string name="select_the_finish_date">Select End Date</string>
+    <string name="select_the_take_hour">Select time of admission</string>
+    <string name="select_take_hour">Admission Time</string>
+    <string name="plan_for_day">Medicine of the Day</string>
+    <string name="about_text">Este projecto foi desenvolvido no ambito da UC Interação Pesssoa Computador do Curso de Engenharia Informática da ESTIG, orientada pelo docente Luís Garcia.</string>
+    <string name="about_authors">Authors:</string>
+    <string name="about_authors_names">Henrique Gil(20435) e Gabriel Gomes(19932)</string>
+    <string name="app_version">Version: 0.0.2</string>
+    <string name="side_effects">Side Effects</string>
 </resources>
