@@ -7,19 +7,34 @@
     tools:context=".About">
 
     <TextView
-        android:id="@+id/textView27"
-        android:layout_width="331dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="44dp"
+        android:id="@+id/textView28"
+        android:layout_width="346dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="50dp"
         android:layout_marginEnd="44dp"
         android:fontFamily="@font/ubuntu"
         android:lineSpacingExtra="14sp"
-        android:text="@string/about_authors_names"
+        android:text="@string/about_authors_name_2"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="346dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/about_authors_name_1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -95,10 +110,10 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="327dp"
-        android:layout_height="276dp"
+        android:layout_width="325dp"
+        android:layout_height="284dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="44dp"
         android:autoSizeTextType="none"
         android:fontFamily="@font/ubuntu"
@@ -123,7 +138,6 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
