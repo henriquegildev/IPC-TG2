@@ -4,7 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="name_medicine">Name Medicine</string>
     <string name="icon_medicine">Icon Medicine</string>
-    <string name="medicine_dose_placeholder">Exemaple: 100mg</string>
+    <string name="medicine_dose_placeholder">Example: 100mg</string>
     <string name="add_medicine">Add Medicine</string>
     <string name="medicine_in_plan">Medicine in Plan</string>
     <string name="previously_medicine_in_plan">Medicine Previously in Plan</string>
@@ -54,4 +54,7 @@
     <string name="about_authors_name_2">Gabriel Gomes(19932)</string>
     <string name="app_version">Version: 0.0.2</string>
     <string name="side_effects">Side Effects</string>
+    <string name="side_effects_med1">Being a non-steroidal anti-inflammatory drug (NSAID), ibuprofen shares all the side effects of the class. The main side effects of ibuprofen, in decreasing order of frequency, are: dyspepsia (burning in the stomach), nausea, heartburn, dizziness, blurred vision, ringing in the ears, fluid retention and edema, constipation, excess gas, itching and decreased urinary volume. Two serious complications of ibuprofen are peptic ulcer and kidney failure, which can arise with prolonged use of any NSAID. Patients who use chronic ibuprofen are also at increased risk of cardiovascular complications</string>
+    <string name="side_effects_med2"></string>
+    <string name="side_effects_med3"></string>
 </resources>
