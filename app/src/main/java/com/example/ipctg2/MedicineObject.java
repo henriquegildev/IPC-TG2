@@ -19,6 +19,7 @@ public class MedicineObject {
             R.mipmap.med4,
             R.mipmap.med5,
     };
+
     public MedicineObject(String name, int id, boolean taken, String startDate, String finishDate) {
         this.medicineName = name;
         this.mAmount = id;

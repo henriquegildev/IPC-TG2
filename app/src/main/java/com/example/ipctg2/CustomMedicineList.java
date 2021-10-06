@@ -24,7 +24,7 @@ public class CustomMedicineList extends ArrayAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
         LayoutInflater inflater = context.getLayoutInflater();
-        if(convertView==null)
+        if (convertView == null)
             row = inflater.inflate(R.layout.row_icons_med_items, null, true);
         TextView textViewNameMed = row.findViewById(R.id.textView_med_name);
         ImageView medIcon = row.findViewById(R.id.imageid);

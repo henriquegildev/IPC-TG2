@@ -44,7 +44,6 @@ public class AddMedicine extends AppCompatActivity {
     String amPm;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +60,6 @@ public class AddMedicine extends AppCompatActivity {
 
         buttonAddMedicine = findViewById(R.id.button_add_medicine);
         buttonAddMedicine.setOnClickListener(v -> saveMedInfo(v));
-
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, MedicineList);
@@ -145,29 +143,32 @@ public class AddMedicine extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(AddMedicine.this.getApplicationContext(), "Medicine Added with success.", Toast.LENGTH_LONG).show();
             }
-            });
+        });
 
     }
 
     public void openMain(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
+
     public void openSelectMedIcon(View view) {
-        Intent  intent = new Intent(this, SelectMedicineIcon.class);
+        Intent intent = new Intent(this, SelectMedicineIcon.class);
         startActivity(intent);
     }
+
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }
+
     public void goBack() {
         super.finish();
     }
 
 
-   // EditText editText = findViewById(R.id.editText);
+    // EditText editText = findViewById(R.id.editText);
 
 
-    public void saveMedInfo(View view)  {
+    public void saveMedInfo(View view) {
 //        String saveMedInfo;
 //        String text = editText.getText().toString();
 //
@@ -182,7 +183,7 @@ public class AddMedicine extends AppCompatActivity {
     // Search for JSON file with Medicine, maybe a medicine API;
     // Read from JSON file;
     // Load values from JSON to String array.
-    private static final String[] MedicineList = new String[] {
+    private static final String[] MedicineList = new String[]{
             "Kestine", "Paracetamol", "Ibuprofeno", "Voltaren", "Klacid"
     };
 

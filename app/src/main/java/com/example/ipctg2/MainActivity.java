@@ -34,11 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private String[] nameIcon2 = {"Voltaren", "Klacid"};
     private String filePath = "C:\\Git\\IPC-TG2\\app";
 
-    //TODO:
-    // SE HOUVER TEMPO!
-    // ARRANJAR ICONS MAIS ESTILISTICOS PARA OS MEDICAMENTOS,
-    // INVÉS DE SEREM IMAGENS REAIS, FICA ESTRANHO..
-
     private Integer[] imageid = {
             R.mipmap.med1,
             R.mipmap.med2,
@@ -48,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             R.mipmap.med4,
             R.mipmap.med5,
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,13 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
         listView = findViewById(android.R.id.list);
         ListView listView2 = findViewById(R.id.list2);
-        //listView.addHeaderView(textView);
         // For populating list data
         DayMedicineCustomList customDayMedicineList = new DayMedicineCustomList(this, nameIcon, imageid);
         listView.setAdapter(customDayMedicineList);
         DayMedicineCustomList customDayMedicineList2 = new DayMedicineCustomList(this, nameIcon2, imageid2);
         listView2.setAdapter(customDayMedicineList2);
-        //CheckBox checkBox = findViewById(R.id.checkBox);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -85,25 +79,31 @@ public class MainActivity extends AppCompatActivity {
     public void openMenu(View view) {
         startActivity(new Intent(this, Menu.class));
     }
-    public void openMorningMeds(View view) { startActivity(new Intent(this, PlanForDay.class)); }
+
+    public void openMorningMeds(View view) {
+        startActivity(new Intent(this, PlanForDay.class));
+    }
+
     public void openEveningMeds(View view) {
         startActivity(new Intent(this, PlanForDay.class));
     }
 
-    public int getPosition(){
+    public int getPosition() {
         return 0;
     }
+
     public void onCheckboxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
         int i = listView.getCheckedItemPosition();
         System.out.println(i + " " + "ischecked: " + checked);
     }
-    public void displayTime(TextView time){
-        Thread timeThread = new Thread(){
-            public void run(){
-                try{
-                    while (!isInterrupted()){
+
+    public void displayTime(TextView time) {
+        Thread timeThread = new Thread() {
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
                         runOnUiThread(() -> {
                             //Sets current time from moment of creation
                             String currentTimeString = DateFormat.getTimeInstance(DateFormat.SHORT).format(new Date());

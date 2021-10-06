@@ -57,28 +57,29 @@ public class Menu extends AppCompatActivity {
     public void openMain(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
-    public void closeMenu(View view){
+
+    public void closeMenu(View view) {
         super.finish();
     }
 
     //Bottom part
-    public void openHome(View view){
+    public void openHome(View view) {
         startActivity(new Intent(this, MainActivity.class));
     }
 
-    public void openMeds(View view){
+    public void openMeds(View view) {
         startActivity(new Intent(this, Medicine.class));
     }
 
-    public void openAddMeds(View view){
+    public void openAddMeds(View view) {
         startActivity(new Intent(this, AddMedicine.class));
     }
 
-    public void openSettings(View view){
+    public void openSettings(View view) {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 
-    public void openAbout(View view){
+    public void openAbout(View view) {
         startActivity(new Intent(this, About.class));
     }
 }

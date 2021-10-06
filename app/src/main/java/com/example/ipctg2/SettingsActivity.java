@@ -30,6 +30,7 @@ public class SettingsActivity extends AppCompatActivity {
     public void openMenu() {
         startActivity(new Intent(this, Menu.class));
     }
+
     public void goBack() {
         super.finish();
     }
